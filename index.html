@@ -5,132 +5,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ethical Life in Unethical Times</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
   <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #0A090C;
-      color: #FCEEDE;
-    }
+    body { margin:0; font-family:'Inter',sans-serif; background:#0A090C; color:#FCEEDE; }
+    nav { position:fixed; top:0; width:100%; display:flex; justify-content:center; gap:30px; padding:15px; background:rgba(10,9,12,0.85); backdrop-filter:blur(6px); z-index:10; }
+    nav a { color:#FCEEDE; text-decoration:none; letter-spacing:1px; }
 
     header {
-      height: 100vh;
-      background: linear-gradient(rgba(10,9,12,0.7), rgba(10,9,12,0.9)), url('hero.jpg') center/cover;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 20px;
+      height:100vh;
+      background:linear-gradient(rgba(10,9,12,0.6), rgba(10,9,12,0.95)), url('hero.jpg') center/cover;
+      display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; padding:20px;
     }
 
-    h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 3rem;
-      margin: 0.5em 0;
-    }
+    .script { font-family:'Cormorant Garamond', serif; font-style:italic; font-size:2rem; opacity:0.9; }
+    h1 { font-family:'Cormorant Garamond', serif; font-size:4rem; margin:10px 0; letter-spacing:2px; }
+    .accent { color:#BC4749; }
 
-    h2 {
-      font-size: 1.5rem;
-      letter-spacing: 2px;
-      color: #BC4749;
-    }
+    .info { margin-top:20px; font-size:1.2rem; }
 
-    nav {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      padding: 15px;
-      background: rgba(10,9,12,0.8);
-      backdrop-filter: blur(5px);
-    }
+    section { padding:80px 20px; max-width:900px; margin:auto; }
 
-    nav a {
-      color: #FCEEDE;
-      text-decoration: none;
-      font-weight: 500;
-    }
+    footer { text-align:center; padding:40px; opacity:0.6; }
 
-    section {
-      padding: 80px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    .card {
-      background: #3B3A3D;
-      padding: 20px;
-      margin: 20px 0;
-      border-radius: 10px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 40px;
-      font-size: 0.9rem;
-      opacity: 0.7;
-    }
-
-    ul {
-      line-height: 1.8;
-    }
+    .fade { animation: fadeIn 2s ease forwards; opacity:0; }
+    @keyframes fadeIn { to { opacity:1; transform:none; } from { opacity:0; transform:translateY(20px);} }
   </style>
 </head>
-
 <body>
 
 <nav>
-  <a href="#about">About</a>
-  <a href="#cfp">Call for Papers</a>
-  <a href="#team">Team</a>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="archive.html">Archive</a>
 </nav>
 
 <header>
-  <h2>Call for Papers</h2>
-  <h1>Ethical Life in Unethical Times</h1>
-  <p>Hybrid Graduate Conference · April 17–18</p>
-  <p>Submit Abstracts by April 4</p>
+  <div class="script fade">Call for Papers</div>
+  <h1 class="fade">Ethical Life <br><span class="accent">in Unethical Times</span></h1>
+  <div class="info fade">Hybrid Graduate Conference · April 17–18</div>
+  <div class="info fade">Submit Abstracts by April 4</div>
 </header>
-
-<section id="about">
-  <h1>About</h1>
-  <p>
-    The Ethics and Applied Philosophy Graduate Conference is a student-organized event focused on urgent philosophical questions arising from contemporary crises. The conference emphasizes work from marginalized perspectives and aims to make philosophy responsive and engaged.
-  </p>
-</section>
-
-<section id="cfp">
-  <h1>Themes</h1>
-  <div class="card">
-    <ul>
-      <li>Moral Injury</li>
-      <li>Resilience</li>
-      <li>Repair</li>
-    </ul>
-  </div>
-</section>
-
-<section id="team">
-  <h1>2026 Organizers</h1>
-  <div class="card">
-    <ul>
-      <li>Darek McCullers</li>
-      <li>Fareebah Yaseen</li>
-      <li>Daniel Haley</li>
-      <li>Trey Best</li>
-      <li>Jonathan Mercer</li>
-      <li>Cameron Carsten</li>
-      <li>Pablo Hortal</li>
-      <li>Rawlanda Hinds</li>
-      <li>Johnny Flynn</li>
-    </ul>
-  </div>
-</section>
 
 <footer>
   UNC Charlotte Minorities and Philosophy & Philosophical Union
